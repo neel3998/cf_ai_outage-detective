@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Outage Detective 🔍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 AI-Powered Outage Detective</h1>
+            <p class="subtitle">Intelligent monitoring powered by Cloudflare Workers AI</p>
+        </header>
+
+        <div class="dashboard">
+            <!-- Status Overview -->
+            <section class="card">
+                <h2>📊 System Status</h2>
+                <div id="statusOverview">
+                    <div class="loading">Loading status...</div>
+                </div>
+            </section>
+
+            <!-- Monitor Control -->
+            <section class="card">
+                <h2>🎯 Start Monitoring</h2>
+                <div class="monitor-form">
+                    <input 
+                        type="text" 
+                        id="serviceInput" 
+                        placeholder="Enter service URL (e.g., api.example.com)"
+                        value="api.example.com"
+                    >
+                    <label>
+                        <input type="checkbox" id="simulateCheckbox" checked>
+                        Simulate failure (for demo)
+                    </label>
+                    <button id="startMonitorBtn" class="btn-primary">
+                        Start Monitoring
+                    </button>
+                </div>
+                <div id="monitorStatus" class="status-message"></div>
+            </section>
+
+            <!-- Recent Incidents -->
+            <section class="card">
+                <h2>📋 Recent Incidents</h2>
+                <div id="incidentsList">
+                    <div class="loading">Loading incidents...</div>
+                </div>
+            </section>
+
+            <!-- AI Chat Interface -->
+            <section class="card chat-section">
+                <h2>💬 Chat with AI Detective</h2>
+                <div id="chatMessages" class="chat-messages"></div>
+                <div class="chat-input-container">
+                    <input 
+                        type="text" 
+                        id="chatInput" 
+                        placeholder="Ask me about incidents... (e.g., 'What caused the last outage?')"
+                    >
+                    <button id="sendChatBtn" class="btn-secondary">Send</button>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>Built with ☁️ Cloudflare Workers AI, Workflows & Durable Objects</p>
+            <p>
+                <a href="https://github.com/yourusername/cf_ai_outage-detective" target="_blank">
+                    View on GitHub
+                </a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
