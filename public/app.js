@@ -6,7 +6,7 @@
 // Configuration - Update this with your Worker URL after deployment
 const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
     ? 'http://localhost:8787'
-    : 'https://cf_ai_outage-detective.YOUR_SUBDOMAIN.workers.dev';
+    : 'https://cf_ai_outage-detective.neelp27.workers.dev';
 
 // State
 let chatHistory = [];
