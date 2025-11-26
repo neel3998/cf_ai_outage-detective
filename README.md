@@ -1,6 +1,8 @@
 # 🔍 AI-Powered Internet Outage Detective
 
 An intelligent monitoring system that detects, analyzes, and explains internet outages using AI. Built entirely on Cloudflare's serverless platform.
+Basically you can monitor services, check system's status, check recent incidents and chat with AI detective to debug the issues.
+I have deployed this project on to the cloudflare and here is the working link: https://33cd99a3.outage-detective.pages.dev/
 
 ## 🎯 Features
 
