@@ -1,4 +1,4 @@
-name = "cf_ai_outage-detective"
+name = "cf-ai-outage-detective"
 main = "src/index.ts"
 compatibility_date = "2024-11-26"
 account_id = "ae73086fd4c54460e732cc9c4f61d734"
